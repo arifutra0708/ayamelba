@@ -309,16 +309,18 @@
   </div>
 
   <!-- DETAIL -->
-  <div class="container">
-    <section class="detail" data-testid="product-detail">
-      <!-- GALLERY -->
-      <div class="gallery">
-        <div class="gallery-main" data-testid="gallery-main">
-          <span class="gallery-badge" id="badge">TERLARIS</span>
-          <img id="main-img" src="" alt="" />
-        </div>
-        <div class="thumbs" id="thumbs" data-testid="thumbs"></div>
-      </div>
+<div class="gallery">
+  <div class="gallery-main" data-testid="gallery-main">
+    <span class="gallery-badge" id="badge">TERLARIS</span>
+    <img id="main-img" src="images/ayam1.jpg" alt="Ayam Elba" />
+  </div>
+  <div class="thumbs" id="thumbs" data-testid="thumbs">
+    <img src="images/ayam1.jpg" onclick="document.getElementById('main-img').src=this.src">
+    <img src="images/ayam2.jpg" onclick="document.getElementById('main-img').src=this.src">
+    <img src="images/ayam3.jpg" onclick="document.getElementById('main-img').src=this.src">
+    <img src="images/ayam4.jpg" onclick="document.getElementById('main-img').src=this.src">
+  </div>
+</div>
 
       <!-- INFO -->
       <div class="info">
